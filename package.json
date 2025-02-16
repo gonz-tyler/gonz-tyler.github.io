@@ -1,0 +1,29 @@
+{
+  "name": "portfolio-website",
+  "version": "1.0.0",
+  "description": "A portfolio website to showcase skills as a software developer and UI/UX designer.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "live-server src",
+    "build": "echo 'Build process not defined yet'",
+    "test": "echo 'No tests defined yet'"
+  },
+  "keywords": [
+    "portfolio",
+    "website",
+    "developer",
+    "UI/UX",
+    "design"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  },
+  "devDependencies": {},
+  "homepage": "https://your-portfolio-website.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/portfolio-website.git"
+  }
+}
