@@ -46,3 +46,18 @@ footer {
     color: white;
     padding: 10px;
 }
+
+#banner .inner {
+    text-align: center;
+    color: white;
+    padding: 50px;
+}
+
+#banner h1, #banner p {
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+#banner {
+    background: url("../images/banner.jpg") center/cover no-repeat;
+}
