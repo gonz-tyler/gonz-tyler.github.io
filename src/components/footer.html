@@ -1,7 +1,10 @@
 <footer class="text-center py-6 mt-10 bg-gray-800">
-    <p class="text-lg">© 2023 Gonzalo. All rights reserved.</p>
+    <p class="text-lg">© <span id="current-year"></span> Gonzalo. All rights reserved.</p>
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
     <p class="text-lg">Connect with me on 
-        <a href="#" class="text-blue-400"><span class="material-icons">code</span> GitHub</a> | 
+        <a href="github.com/gonz-tyler" class="text-blue-400"><span class="material-icons">code</span> GitHub</a> | 
         <a href="#" class="text-blue-400"><span class="material-icons">business_center</span> LinkedIn</a>
     </p>
 </footer>
