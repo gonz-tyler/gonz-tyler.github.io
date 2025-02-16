@@ -38,19 +38,19 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Load header, navbar, and footer dynamically
-    fetch('/src/components/header.html')
+    fetch('../../components/header.html')
         .then(response => response.text())
         .then(data => {
             document.getElementById('header').innerHTML = data;
         });
 
-    fetch('/src/components/navbar.html')
+    fetch('../../components/navbar.html')
         .then(response => response.text())
         .then(data => {
             document.getElementById('navbar').innerHTML = data;
         });
 
-    fetch('/src/components/footer.html')
+    fetch('../../components/footer.html')
         .then(response => response.text())
         .then(data => {
             document.getElementById('footer').innerHTML = data;
