@@ -4,10 +4,17 @@ document.addEventListener('DOMContentLoaded', function() {
     // Navigation toggle for mobile view
     const navToggle = document.querySelector('.nav-toggle');
     const navMenu = document.querySelector('.nav-menu');
+    const closeMenuButton = document.querySelector('.close-menu-button');
 
     if (navToggle) {
         navToggle.addEventListener('click', function() {
-            navMenu.classList.toggle('hidden');
+            navMenu.classList.toggle('translate-x-full');
+        });
+    }
+
+    if (closeMenuButton) {
+        closeMenuButton.addEventListener('click', function() {
+            navMenu.classList.add('translate-x-full');
         });
     }
 
@@ -36,23 +43,4 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
-
-    // Load header, navbar, and footer dynamically
-    fetch('../../components/header.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('header').innerHTML = data;
-        });
-
-    fetch('../../components/navbar.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('navbar').innerHTML = data;
-        });
-
-    fetch('../../components/footer.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('footer').innerHTML = data;
-        });
 });
